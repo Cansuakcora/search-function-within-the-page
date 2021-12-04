@@ -1,0 +1,38 @@
+.footer {
+    width: 100%;
+    min-height: 100px;
+    box-shadow: 0px -3px 6px #00000029;
+    display: flex;
+    align-items: center;
+
+    @include media767{
+        padding: 10px 0;
+     }
+
+    &__img {
+        width: 100%;
+        max-width: 107px;
+
+        @include media767{
+            display: flex;
+            margin: 0 auto;
+        }
+    }
+
+    &__info {
+        display: flex;
+        align-items: center;
+        text-align: right;
+        justify-content: flex-end;
+        color: #001E61;
+        font-size: 13px;
+
+        @include media767{
+           margin-top: .5rem;
+           text-align: center;
+           justify-content: center;
+        }
+    }
+
+
+}

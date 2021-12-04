@@ -1,0 +1,189 @@
+.card-time {
+    position: relative;
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    margin: auto 1.5rem;
+
+    @include media1400 {
+        margin: auto 1rem;
+    }
+
+
+    font-size: 15px;
+
+    &__date {
+        font-size: 1.5em;
+        text-align: center;
+        padding: .5rem;
+    }
+
+    &__title {
+        font-size: 1.35em;
+        font-family: "FSAlbertBold", sans-serif;
+        text-align: center;
+        padding: 0rem .5rem 1rem .5rem;
+        text-transform: uppercase;
+
+        @media screen and (-ms-high-contrast: active),
+        (-ms-high-contrast: none) {
+            font-size: 1.3em;
+        }
+
+        @include media1400 {
+
+            @media screen and (-ms-high-contrast: active),
+            (-ms-high-contrast: none) {
+                font-size: 1.2em;
+            }
+        }
+    }
+
+    &__location {
+        font-size: 1.25em;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 49px;
+        padding: 0.5rem 1rem;
+    }
+
+    &__city-time {
+        display: inline-block;
+        width: 100%;
+        padding: 1.5rem 1rem;
+        border-bottom: 1px solid rgba($color-gray-light, 0.3);
+
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        &:nth-last-of-type(2) {
+            border-bottom: none;
+        }
+    }
+
+    &__city {
+        font-size: 1.1em;
+
+        @include media1400 {
+
+            @media screen and (-ms-high-contrast: active),
+            (-ms-high-contrast: none) {
+                font-size: 1em;
+            }
+        }
+    }
+
+    &__clock {
+        font-size: 1.1em;
+        font-family: "FSAlbertBold", sans-serif;
+
+        @media screen and (-ms-high-contrast: active),
+        (-ms-high-contrast: none) {
+            font-size: 1em;
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        padding: 0 3rem;
+
+        @include media460 {
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+}
+
+.card-thakyou {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px #00000024;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem;
+
+    @include media1600 {
+        font-size: 14px;
+        padding: 1.5rem;
+        max-width: 380px;
+    }
+
+    &__icon {
+        width: 72px;
+        height: 72px;
+        font-size: 2.5em;
+        color: $color-white;
+        border-radius: 100%;
+    }
+
+    &__title {
+        font-size: 1.6em;
+        font-family: "FSAlbertBold", sans-serif;
+        margin: 0.8rem 0 1rem 0;
+        text-align: center;
+    }
+
+    &__desciription {
+        font-size: 1.25em;
+        font-family: "FSAlbertRegular", sans-serif;
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+}
+
+.card-upcoming {
+    width: 300px;
+    border-radius: 10px;
+
+    &__head {
+        padding: 1rem 0;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        padding: 1rem;
+    }
+
+    &__date {
+        font-size: 1.25em;
+        text-align: center;
+    }
+
+    &__body {
+        padding: 0rem 1rem 1rem 1rem;
+    }
+
+    &__info {
+        font-size: 1.18em;
+        text-align: center;
+        margin-top: 1rem;
+        min-height: 95px;
+    }
+
+    &__border {
+        border-bottom: 1px solid rgba($color-gray-light, 0.30);
+        width: 100%;
+        display: block;
+    }
+
+    &__speaker-name {
+        font-size: 1.2em;
+        text-align: center;
+        margin: 1rem;
+    }
+
+    &__footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0rem 1rem 1rem 1rem;
+    }
+}

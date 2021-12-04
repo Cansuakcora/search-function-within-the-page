@@ -1,0 +1,96 @@
+.modal {
+
+    background-color: #00000099;
+
+    &__dialog {
+        position: relative;
+        max-width: 900px;
+
+
+        @include media991 {
+            max-width: 800px;
+        }
+
+        @include media768 {
+            max-width: 750px;
+        }
+
+        @include media900{
+            margin-top: 4rem;
+        }
+
+        @include media-min1400 {
+            margin-top: 4.5rem;
+        }
+    }
+
+    &__content {
+        border-radius: 15px;
+        background-color: transparent;
+        border: none;
+    }
+
+    &__close {
+        padding: 3px 6px 3px 0!important;
+        border-radius: 100%;
+        width: 37px!important;
+        height: 37px!important;
+        margin: 0!important;
+        opacity: 1!important;
+        font-weight: 300!important;
+        background: 0 0!important;
+        border: 3.5px solid $color-white!important;
+        position: absolute;
+        right: -40px;
+        top: -23px;
+
+        @include media900{
+            right: 3px;
+            top: -47px;
+        }
+
+        @include media767{
+            padding: 1px 0px 3px 0!important;
+            width: 32px!important;
+            height: 32px!important;
+            top: -38px;
+        }
+
+        span {
+            font-size: 3.3rem;
+            line-height: 24px;
+            color: $color-white;
+
+            @include media767{
+                font-size: 2.6rem;
+            }
+        }
+    }
+
+    &__header {
+
+        padding: 0;
+        border-bottom: none;
+
+        &__img {
+            width: 100%;
+            max-width: 900px;
+            border-radius: 20px;
+
+            @include media768 {
+                max-width: 750px;
+            }
+        }
+    }
+}
+
+@media screen and (-ms-high-contrast: active),
+(-ms-high-contrast: none) {
+    .modal__close {
+        padding: 2px 6px 4px 1px !important;
+    }
+
+    .modal__close span {
+        font-size: 3.1rem;
+    }
+}

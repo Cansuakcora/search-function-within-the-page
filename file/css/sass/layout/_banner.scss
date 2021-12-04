@@ -1,0 +1,61 @@
+.banner {
+    @include media1400 {
+        font-size: 14px;
+    }
+
+    @include media991 {
+        font-size: 12px;
+    }
+
+    padding: 5em 0 8.5em 0;
+
+    &__next-webinar {
+        font-size: 1.3em;
+        font-family: 'BrandonGrotesqueBold', sans-serif;
+    }
+
+    &__title {
+        font-size: 2.3em;
+        font-family: 'MontserratBold', sans-serif;
+        margin-top: 1rem;
+
+        @include media991 {
+            text-align: center;
+        }
+
+        @include media767 {
+            font-size: 2.8em;
+            text-align: center;
+        }
+
+        @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none){
+            font-weight: bold;
+        }
+    }
+
+    &__date {
+        font-size: 1.36em;
+        color: $color-orange;
+        font-family: 'MontserratRegular' ,sans-serif;
+
+        @include media991 {
+            text-align: center;
+        }
+
+        @include media767 {
+            font-size: 1.7em;
+            text-align: center;
+        }
+    }
+
+    &__logo {
+        width: 100%;
+        max-width: 190px;
+
+        @include media991 {
+          display: flex;
+          justify-content: center;
+          margin: 0 auto;
+        }
+    }
+}

@@ -1,0 +1,255 @@
+.form-group {
+    position: relative;
+    margin-bottom: 1rem;
+
+    small {
+        font-size: 12px;
+        color: rgb(253, 37, 37);
+        font-family: "BrandonGrotesqueBold", sans-serif;
+        position: absolute;
+        top: 4px;
+        left: 2.5rem;
+    }
+}
+
+.form-card {
+    max-width: 350px;
+    padding: 2rem 2rem;
+    width: 100%;
+    background-color: $color-white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.14);
+
+    @media screen and (-ms-high-contrast: active),
+    (-ms-high-contrast: none) {
+      
+        @include media991 {
+            margin: 5rem 0 2rem 0;
+        }
+    }
+
+    &__title {
+        font-size: 1.4em;
+        font-family: 'MontserratRegular' ,sans-serif;
+        text-align: center;
+        margin-bottom: 1.2rem;
+        color: $color-navy-blue-3;
+    }
+
+    &__date {
+        font-size: 1.25em;
+        text-align: center;
+        margin-bottom: .5rem;
+    }
+
+    &__session-name {
+        font-size: 1em;
+        font-family: "BrandonGrotesqueBold", sans-serif;
+        text-align: center;
+        margin-bottom: 1.5rem;
+        text-transform: uppercase;
+    }
+
+    &__border {
+        display: inline-block;
+        width: 100%;
+        border-bottom: 1px solid rgba($color-black-3, 0.15);
+        margin-bottom: 0.8rem;
+    }
+
+    &__label{
+        color: #001E61;
+        font-family: 'MontserratRegular' ,sans-serif;
+        font-size: 16px;
+        margin-bottom: .5rem;
+    }
+
+    &__input {
+        max-width: 364px;
+        width: 100%;
+        height: 46px;
+        border-radius: 7px;
+        font-size: 1em;
+        color: $color-black-6;
+        border: 1px solid #C7C7C7;
+        appearance: none;
+        padding-left: 1rem;
+        font-family: 'MontserratRegular' ,sans-serif;
+
+        &::-ms-expand {
+            display: none;
+        }
+    }
+
+    &__textarea {
+        width: 100%;
+        min-height: 162px !important;
+        padding: 12px 12px;
+        border-radius: 7px;
+        font-size: 1em;
+        color: $color-black-6;
+        background-color: $color-gray-light-2;
+        resize: vertical;
+    }
+
+    select {
+        // text-indent: 17px;
+
+        @media screen and (-ms-high-contrast: active),
+        (-ms-high-contrast: none) {
+            padding-left: 1.8rem;
+        }
+
+        @-moz-document url-prefix() {
+            padding-left: 0rem;
+            text-indent: 14px;
+        }
+
+        @supports (-webkit-touch-callout: none) {
+            padding-left: 0rem;
+            text-indent: 32px;
+        }
+    }
+
+    &__icon {
+        position: absolute;
+        top: 16px;
+        left: 12px;
+        color: #999999;
+    }
+
+    &__checkboxs {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    &__text {
+        font-size: 13px;
+        color: $color-black-6;
+        margin-left: 1.5rem;
+        display: block;
+    }
+
+    &__description {
+        font-size: 10px;
+        color: $color-black-6;
+        margin-bottom: 1rem;
+    }
+}
+
+/* [ REGISTER CHECKBOX  START ] */
+.checkbox-label {
+    // display: inline;
+    position: relative;
+    margin: auto;
+    cursor: pointer;
+    font-size: 13px;
+    // line-height: 18px;
+    // height: 18px;
+    // width: 18px;
+    clear: both;
+}
+
+.checkbox-label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkbox-label .form-card__span {
+    position: absolute;
+    top: -2px;
+    left: 0px;
+    height: 18px;
+    width: 18px;
+    background-color: transparent;
+    border-radius: 4px;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    border: 1px solid #707070;
+}
+
+.checkbox-label input:checked~.form-card__span {
+    background-color: $color-navy-blue;
+    border-radius: 4px;
+    -webkit-transform: rotate(0deg) scale(1);
+    -ms-transform: rotate(0deg) scale(1);
+    transform: rotate(0deg) scale(1);
+    opacity: 1;
+    border: 1px solid #707070;
+}
+
+.checkbox-label .form-card__span::after {
+    position: absolute;
+    content: "";
+    left: 8px;
+    top: 8px;
+    height: 0px;
+    width: 0px;
+    border-radius: 4px;
+    border: solid $color-navy-blue;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(0deg) scale(0);
+    -ms-transform: rotate(0deg) scale(0);
+    transform: rotate(0deg) scale(0);
+    opacity: 1;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+}
+
+.checkbox-label input:checked~.form-card__span::after {
+    -webkit-transform: rotate(45deg) scale(1);
+    -ms-transform: rotate(45deg) scale(1);
+    transform: rotate(45deg) scale(1);
+    opacity: 1;
+    left: 6px;
+    top: 3px;
+    width: 4px;
+    height: 8px;
+    border: solid $color-white;
+    border-width: 0 2px 2px 0;
+    background-color: transparent;
+    border-radius: 0;
+}
+
+/* For Ripple Effect */
+.checkbox-label .form-card__span::before {
+    position: absolute;
+    content: "";
+    left: 10px;
+    top: 10px;
+    width: 0px;
+    height: 0px;
+    border-radius: 5px;
+    border: 2px solid $color-white;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+}
+
+.checkbox-label input:checked~.form-card__span::before {
+    left: -3px;
+    top: -3px;
+    width: 24px;
+    height: 24px;
+    border-radius: 5px;
+    -webkit-transform: scale(3);
+    -ms-transform: scale(3);
+    transform: scale(3);
+    opacity: 0;
+    z-index: 999;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+}
+
+/* [ REGISTER CHECKBOX  END ] */

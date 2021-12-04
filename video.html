@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Niceye Video Arsiv</title>
+
+    <!-- CS -->
+    <link rel="stylesheet" href="/file/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/dist/file/css/app.min.css">
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-2 header__logo-flex">
+                    <a href="/">
+                        <img src="/file/image/logo-nice-inspire.png" alt="Logo" class="header__logo">
+                    </a>
+                </div>
+                <div class="sol-sm-12 col-md-7 header__search-flex">
+                    <input type="text" id="myInput" onkeyup="myFunction()" class="form-control header__search"
+                     placeholder="Dilediğiniz şeyi arayın">
+                </div>
+                <div class="col-sm-12 col-md-3 header__welcome-flex">
+                    <span class="header__welcome-text">Hoşgeldin,</span>
+                    <span class="header__fullname-text">Mehmet
+                        <!-- <?= $this->session->userdata('site_user')->fullname?> -->
+                    </span>
+                    <a href="logout"><img src="/file/image/log-out.png"></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="video-banner">
+            <div class="container">
+                <div class="video-banner__pst">
+                    <h1 class="video-banner__title"> Hoş Geldiniz!
+                    </h1>
+                </div>
+            </div>
+        </section>
+
+        <section class="myUL video-head py-4">
+            <div class="container">
+
+                <div class=" video-head__box" id="video-page1">
+                    <div class="video-head__info myli" data-toggle="modal" data-target="#speaker1">
+                        <div class="video-head__img"></div>
+                        <p class="video-head__topic">Lorem ipsum dolor sit, amet 
+                            <span class="video-head__speaker">Lorem İpsum</span>
+                        </p>
+                    </div>
+
+                    <div class="video-head__info myli">
+                        <div class="video-head__img"></div>
+                        <p class="video-head__topic">consectetur adipisicing elit. 
+                            <span class="video-head__speaker">Lorem İpsum</span>
+                        </p>
+                    </div>
+                    <div class="video-head__info myli">
+                        <div class="video-head__img"></div>
+                        <p class="video-head__topic">Minima cum fugit ducimus voluptate?
+                            <span class="video-head__speaker">Lorem İpsum</span>
+                        </p>
+                    </div>
+                    <div class="video-head__info myli">
+                        <div class="video-head__img"></div>
+                        <p class="video-head__topic"> Magnam sint explicabo exercitationem 
+                            <span class="video-head__speaker">Lorem İpsum</span>
+                        </p>
+                    </div>
+                    <div class="video-head__info myli">
+                        <div class="video-head__img"></div>
+                        <p class="video-head__topic">consectetur nisi nobis 
+                            <span class="video-head__speaker">Lorem İpsum</span>
+                        </p>
+                    </div>
+                    <div class="video-head__info myli">
+                        <div class="video-head__img"></div>
+                        <p class="video-head__topic">labore animi culpa sed 
+                            <span class="video-head__speaker">Lorem İpsum</span>
+                        </p>
+                    </div>
+                  
+                </div>
+        </section>
+
+    </main>
+
+    <!-- [ MODAL SPEAKER 1] -->
+    <div class="modal fade" id="speaker1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal__dialog">
+            <div class="modal-content modal__content">
+                <div class="modal-header modal__header">
+                    <button type="button" class="close modal__close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <img src="/file/image/video-page-img.png" alt="Speaker" class="modal__header__img">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- [ MODAL SPEAKER 1] -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row ie-mt-2">
+                <div class="col-sm-12 col-md-4">
+                    <img src="/file/image/logo-nice-inspire.png" class="footer__img">
+                </div>
+                <div class="col-sm-12 col-md-8 footer__info">
+                    <p>Bu portal NicEye Group çalışanlarına özel dahili kullanım içindir.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="/file/js/jquery-3.6.0.min.js"></script>
+    <script src="/file/js/bootstrap.min.js"></script>
+    <script src="/file/js/app/main.js"></script>
+
+
+    <script>
+    
+    </script>
+</body>
+
+</html>

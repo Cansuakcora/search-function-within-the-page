@@ -1,0 +1,56 @@
+@font-face {
+     font-family: 'BrandonGrotesqueBold';
+     src: url('/file/css/fonts/BrandonGrotesque-Bold.eot');
+     src: local('/file/css/fonts/FSAlbert Regular'), local('/file/css/fonts/BrandonGrotesque-Bold'),
+          url('/file/css/fonts/BrandonGrotesque-Bold.eot?#iefix') format('embedded-opentype'),
+          url('/file/css/fonts/BrandonGrotesque-Bold.woff2') format('woff2'),
+          url('/file/css/fonts/BrandonGrotesque-Bold.woff') format('woff'),
+          url('/file/css/fonts/BrandonGrotesque-Bold.ttf') format('truetype'),
+          url('/file/css/fonts/BrandonGrotesque-Bold.svg#BrandonGrotesque-Bold') format('svg');
+     font-weight: normal;
+     font-style: normal;
+     font-display: swap;
+}
+
+@font-face {
+     font-family: 'MontserratBold';
+     src: url('/file/css/fonts/Montserrat-Bold.eot');
+     src: local('/file/css/fonts/FSAlbert Regular'), local('/file/css/fonts/Montserrat-Bold'),
+          url('/file/css/fonts/Montserrat-Bold.eot?#iefix') format('embedded-opentype'),
+          url('/file/css/fonts/Montserrat-Bold.woff2') format('woff2'),
+          url('/file/css/fonts/Montserrat-Bold.woff') format('woff'),
+          url('/file/css/fonts/Montserrat-Bold.ttf') format('truetype'),
+          url('/file/css/fonts/Montserrat-Bold.svg#Montserrat-Bold') format('svg');
+     font-weight: normal;
+     font-style: normal;
+     font-display: swap;
+}
+
+@font-face {
+     font-family: 'MontserratRegular';
+     src: url('/file/css/fonts/Montserrat-Regular.eot');
+     src: local('/file/css/fonts/FSAlbert Regular'), local('/file/css/fonts/Montserrat-Regular'),
+          url('/file/css/fonts/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+          url('/file/css/fonts/Montserrat-Regular.woff2') format('woff2'),
+          url('/file/css/fonts/Montserrat-Regular.woff') format('woff'),
+          url('/file/css/fonts/Montserrat-Regular.ttf') format('truetype'),
+          url('/file/css/fonts/Montserrat-Regular.svg#Montserrat-Regular') format('svg');
+     font-weight: normal;
+     font-style: normal;
+     font-display: swap;
+}
+
+
+@font-face {
+     font-family: 'BrandonGrotesqueRegular';
+     src: url('/file/css/fonts/BrandonGrotesque-Regular.eot');
+     src: local('/file/css/fonts/BrandonGrotesque-Regular'),
+          url('/file/css/fonts/BrandonGrotesque-Regular.eot?#iefix') format('embedded-opentype'),
+          url('/file/css/fonts/BrandonGrotesque-Regular.woff2') format('woff2'),
+          url('/file/css/fonts/BrandonGrotesque-Regular.woff') format('woff'),
+          url('/file/css/fonts/BrandonGrotesque-Regular.ttf') format('truetype'),
+          url('/file/css/fonts/BrandonGrotesque-Regular.svg#BrandonGrotesque-Regular') format('svg');
+     font-weight: bold;
+     font-style: normal;
+     font-display: swap;
+}
